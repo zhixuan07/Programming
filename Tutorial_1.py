@@ -28,28 +28,32 @@ def num():
 num()
 
 class Car:
-    def __init__(self, make, model):
-        self._make = make
+    def __init__(self, color, model):
+        self._color = color
         self._model = model
 
-    def set_make(self, make):
-        self._make = make
+    def set_color(self, color):
+        self._color = color
 
     def set_model(self, model):
         self._model = model
 
-    def get_make(self):
-        return self._make
+    def get_color(self):
+        return self._color
 
     def get_model(self):
         return self._model
 
 # Create a Car object
-my_car = Car("Honda", "blue")
+my_car = Car("Honda", "Blue")
 
 # Access the attributes of the Car object
-print("Make of the car: ", my_car.get_make())  # Output: Make of the car:  Honda
+print("Color of the car: ", my_car.get_color())  # Output: Make of the car:  Honda
 print("Model of the car: ", my_car.get_model())
+my_car.set_model("Proton")
+my_car.set_color("Red")
+print("Model of the car: ",my_car.get_model())
+print("Color of the car: ",my_car.get_color())
 
 
 class Employee:
